@@ -88,27 +88,27 @@ export const CERTIFICATIONS: Certification[] = [
   { 
     name: "Certificado de Programación Básica de Software", 
     institution: "Instituto AIEP",
-    pdfUrl: "/certificados/aiep_programacion_basica.pdf"
+    pdfUrl: "/certificados/aiep_programacion_basica.jpg"
   },
   { 
     name: "Certificado de Soporte de Hardware y Software", 
     institution: "Instituto AIEP",
-    pdfUrl: "/certificados/aiep_soporte_hardware_software.pdf"
+    pdfUrl: "/certificados/aiep_soporte_hardware_software.jpg"
   },
   { 
     name: "Certificado Sense - Programación Web", 
     institution: "SER",
-    pdfUrl: "/certificados/sence_programacion_web.pdf"
+    pdfUrl: "/certificados/sence_programacion_web.jpg"
   },
   { 
     name: "Certificado Sense - Desarrollo Full Stack Java", 
     institution: "Sustantiva",
-    pdfUrl: "/certificados/sence_fullstack_java_sustantiva.pdf"
+    pdfUrl: "/certificados/sence_fullstack_java_sustantiva.jpg"
   },
   { 
     name: "Certificado Sense - Desarrollo Full Stack Java 2.0", 
     institution: "Fudesco",
-    pdfUrl: "/certificados/sence_fullstack_java_fudesco.pdf"
+    pdfUrl: "/certificados/sence_fullstack_java_fudesco.jpg"
   }
 ];
 
