@@ -36,7 +36,7 @@ const App: React.FC = () => {
         </footer>
       </div>
 
-      <ChatBot />
+      
     </div>
   );
 };
