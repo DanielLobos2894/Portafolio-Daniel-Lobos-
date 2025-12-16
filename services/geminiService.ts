@@ -30,33 +30,7 @@ Tono: Profesional, entusiasta, útil y conciso.
 Restricción: Solo responde preguntas relacionadas con Daniel Lobos y su perfil profesional. Si te preguntan sobre temas generales no relacionados con tecnología o contratación, dirige cortésmente la conversación hacia la experiencia de Daniel.
 `;
 
-export const sendMessageToGemini = async (message: string, history: { role: 'user' | 'model'; text: string }[]): Promise<string> => {
-  if (!ai) {
-    return "Lo siento, no he sido configurado con una clave API todavía.";
-  }
-
-  try {
-    const model = 'gemini-2.5-flash';
-    
-    // Construct the chat history for the API
-    const chat = ai.chats.create({
-      model: model,
-      config: {
-        systemInstruction: SYSTEM_INSTRUCTION,
-      },
-      history: history.map(h => ({
-        role: h.role,
-        parts: [{ text: h.text }]
-      }))
-    });
-
-    const result = await chat.sendMessage({
-      message: message
-    });
-
-    return result.text || "Estoy pensando...";
-  } catch (error) {
-    console.error("Gemini Error:", error);
-    return "Encontré un error temporal. Por favor, inténtalo de nuevo más tarde.";
-  }
+// Función temporalmente deshabilitada a petición del usuario.
+export const sendMessageToGemini = async (_message: string, _history: { role: 'user' | 'model'; text: string }[]): Promise<string> => {
+  return "La función de chat con Gemini está temporalmente deshabilitada.";
 };
